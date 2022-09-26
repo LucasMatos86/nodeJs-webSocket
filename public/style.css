@@ -1,0 +1,96 @@
+
+* {
+	box-sizing: border-box;
+  font-size: 14px;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(211, 211, 211);
+  font-size: 14px;
+  
+}
+
+ul li:before {
+    content: "\1F63A";
+    margin: 0 0.5em;
+    font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  font-size: 14px;
+  top: 550px;
+  left: 450px;
+}
+header * {
+  z-index: 1;
+}
+h1{
+  text-align: center;
+}
+
+form {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+form input {
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+}
+
+form button {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  background-color: #10cce0;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 30px;
+   font-size: 14px;
+}
+ul{
+  list-style: none;
+  height: 500px;
+  max-width: 700px;
+  margin: 1% auto ;
+  border: 1px solid black;
+  background-color: #47edff;
+  word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+li{
+  background-color: rgb(158, 60, 255);
+  padding: 10px;
+  margin: 10px; 
+  color: white;
+}

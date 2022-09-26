@@ -1,18 +1,20 @@
 
 * {
+  padding: 0;
+  margin: 0;
 	box-sizing: border-box;
   font-size: 14px;
-  
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243,243,243);
   margin: 0;
-  background-color: rgb(211, 211, 211);
-  font-size: 14px;
-  
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
-
 ul li:before {
     content: "\1F63A";
     margin: 0 0.5em;
@@ -47,12 +49,14 @@ header * {
 }
 h1{
   text-align: center;
+  position: absolute;
+  padding: -5px;
+
 }
 
 form {
   position: relative;
-  width: 500px;
-  max-width: 100%;
+  width: 150%;
 }
 
 form input {
@@ -74,23 +78,33 @@ form button {
   color: #fff;
   font-size: 16px;
   padding: 13px 30px;
-   font-size: 14px;
+  font-size: 14px;
+  
 }
-ul{
+
+li{
   list-style: none;
+  background-color: rgb(158, 60, 255);
+  padding: 10px;
+  margin: 10px; 
+  color: white;
+
+}
+.segunda-div{
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.continue{
+  flex-direction: column;
   height: 500px;
-  max-width: 700px;
-  margin: 1% auto ;
+  max-width: 100%;
+  margin-bottom: 10px;
   border: 1px solid black;
   background-color: #47edff;
   word-wrap: break-word;
   overflow-y: auto;
   overflow-x: auto;
-}
-
-li{
-  background-color: rgb(158, 60, 255);
-  padding: 10px;
-  margin: 10px; 
-  color: white;
+ 
 }

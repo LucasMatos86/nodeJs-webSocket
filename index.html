@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Chat</title>
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-      
-
-        <header>  
-            <form class = "forms">
-                <input autofocus type='text' id='msg' placeholder="Digite seu Login" autocomplete="off" /> 
-                <button id="button1" type='submit'>Logar</button>
-            </form>
-        </header>
-       <div class = "segunda-div">
-            <div class = "continue">
-                <ul id='messages'></ul>
-                <div id='status'></div>
+     
+       <div class="firstDiv">
+        <div class="leftSide">
+            <div class="perfil">
+              <h1>Conectados</h1>
             </div>
-        </div>
     
-       
+            <div class="leftItems">
+                <ul id='messages1'>
+                </ul>
+            </div>
+          </div>
+
+          <div class="rightSide">
+            <div class="rightItems">
+              <h3 class="title">CHAT:</h3>
+             
+                <ul id='messages'></ul>
+            <div id='status'></div>
+              
+            </div>
+        <footer>
+                <form>
+                    <input autofocus type='text' id='msg' placeholder="Digite seu Login" autocomplete="off" /> 
+                     <button id="button1" type='submit'>Logar</button>
+                </form>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="script.js"></script>

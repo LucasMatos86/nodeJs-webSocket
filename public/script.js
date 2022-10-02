@@ -5,11 +5,18 @@ $(function () {
 
     $('form').submit(() => submeterForm(socket))
     socket.on('chat msg', exibirMsg)
+
+    $('form').submit(() => submeterForm(socket))
+    socket.on('chat msg log', exibirMsgLog)
 })
 
 function exibirMsg(msg) {
     $('#messages').append($('<li>').text(msg))
 }
+function exibirMsgLog(msg) {
+    $('#messages1').append($('<li>').text(msg))
+}
+
 
 function submeterForm(socket) {
     if (socket.nickname === '') {
@@ -43,3 +50,4 @@ function exibirMsgStatus(msg) {
     $('#status').html(msg)
     console.log(msg)
 }
+

@@ -9,32 +9,29 @@
     </head>
     <body>
      
-       <div class="firstDiv">
-        <div class="leftSide">
-            <div class="perfil">
-              <h1>Conectados</h1>
-            </div>
-    
-            <div class="leftItems">
+      <div class="chat-wrapper">
+        <div class="chat ">
+            <h1>Conectados</h1>
+            <div class="dados">
                 <ul id='messages1'>
                 </ul>
             </div>
-          </div>
+        </div>
+        
 
-          <div class="rightSide">
-            <div class="rightItems">
-              <h3 class="title">CHAT:</h3>
-             
-                <ul id='messages'></ul>
-            <div id='status'></div>
-              
+        <div class="chat-continue">
+            <div class="group">
+                <div class="dados">
+                    <ul id='messages'></ul>
+                </div>
             </div>
-        <footer>
-                <form>
-                    <input autofocus type='text' id='msg' placeholder="Digite seu Login" autocomplete="off" /> 
-                     <button id="button1" type='submit'>Logar</button>
-                </form>
-        </footer>
+        </div>
+        <footer class="footer">
+          <form class="forms">
+              <input autofocus type='text' id='msg' placeholder="Digite seu Login" autocomplete="off" /> 
+               <button class="button1" type='submit'>Logar</button>
+          </form>
+  </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="script.js"></script>

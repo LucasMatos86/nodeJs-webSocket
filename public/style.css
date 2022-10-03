@@ -1,82 +1,143 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+ 
 }
-
-body {
-  background: linear-gradient(to bottom, #ffffff, #2f4f4f);
-  display: grid;
-  justify-content: center;
-  align-items: center;
+body{
+  width: 100%;
   min-height: 100vh;
-  font-size: 16px;
-  background-image: url("https://www.papeiseparede.com.br/3257-large_default/papel-de-parede-whatsapp-branco-e-azul.jpg.webp");
+  background-color: rgb(243,243,243);
+  display: flex;
+  justify-content: center;
+  background-image: url("https://professordoiphone.com.br/wp-content/uploads/2020/03/whatsapp-noturno-hero-554x369.jpg");
 }
+.chat-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100vh;
+  max-width: 100%;
+  }
 
-.firstDiv {
+.chat{
+  display: flex;
+  width: 50%;  
+  height: 80%;
+  max-width: 50%;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-  width: 50vw;
-  height: 40vh;
-  min-height: 30rem;
-  margin: 60px 0;
-  border: 1px solid black;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 0px 10px 25px #333;
-  margin: 2%;
-  overflow-y: auto;
-  overflow-x: auto;
-}
-
-.firstDiv .leftSide {
-  background: #0a64ca;
-  padding: 30px;
-  
-}
-
-.firstDiv .rightSide {
-  background: #ffffff;
-  padding: 15px;
+  background-color: #e2ece8;
+  border :1px solid lightgray;
+  max-width: 100%;
  
 }
 
-.leftItems {
-  margin-top: 10%;
-  color: #ffffff;
-}
-
-.leftItems .title {
-  padding-bottom: 8px;
-  
-}
-
-.rightItems {
-  margin-top: 32px;
-  font-weight: 600;
-  color: #2f4f4f;
-}
-
-.rightItems .title {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-li{
-  background-color: rgb(158, 60, 255);
-  width: auto;
+.chat-continue{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
   max-width: 100%;
-  padding: 10px;
-  margin: 10px; 
-  color: white;
-  border-radius: 50px;
+ 
 }
-ul li:before {
-  content: "\1F920";
-  margin: 0 0.5em;
-  font-size: 14px;
+.group{
+  display: flex;
+  width: 100%;  
+  height: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2rem 0;
+  border :1px solid lightgray;
+  background-image: url("https://www.papeiseparede.com.br/3257-large_default/papel-de-parede-whatsapp-branco-e-azul.jpg.webp");
+
 }
+.group:nth-child(1){
+  min-height: 20rem;
+
+}
+.dados{
+  display: flex;
+  width: 100%;  
+  height: 100%;
+  max-width: 100%;
+  color: rgb(117, 117, 117);
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: auto;
+ 
+}
+
+@media(max-width:1024px){
+  .chat-wrapperr{
+      width: 90%;
+  }
+}
+
+@media(max-width:800px){
+  .body{
+      background-color: #ffffff;
+  }
+
+  .chat-wrapper{
+      width: 100%;
+  }
+
+  .chat{
+    border: 0;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 8px;
+    
+  }
+  .chat-continue{
+      width: 500px;
+      font-size: 8px;
+      word-wrap: break-word;
+      overflow-y: auto;
+      overflow-x: auto;
+  }
+
+  .group{
+      border: 1px solid transparent;
+  }
+    .footer{
+      bottom: 0;
+      position: fixed;
+    }
+
+    .forms {
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 60%;
+    font-size: 8px;
+    margin-left: 30%;
+     
+    }
+    .button1 {
+      position: absolute;
+      top: 20px;
+      right: -20%;
+      background-color: #10cce0;
+      border: 0;
+      border-radius: 50px;
+      color: #fff;
+      padding: 13px 30px;
+      font-size: 8px;
+    }
+}
+
 button {
   cursor: pointer;
 }
@@ -113,4 +174,13 @@ form button {
 footer{
   bottom: 0;
   position: fixed;
+}
+li{
+  background-color: rgb(158, 60, 255);
+  width: auto;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px; 
+  color: white;
+  border-radius: 50px;
 }
